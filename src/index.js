@@ -1,4 +1,3 @@
-import jQuery from 'jquery';
 import './style.scss';
 
 import Router from './util/Router';
@@ -18,4 +17,4 @@ const routes = new Router({
 });
 
 /** Load Events */
-jQuery(document).ready(() => routes.loadEvents());
+routes.loadEvents();

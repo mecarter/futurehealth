@@ -7,3 +7,4 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+    <?php include 'inc/site-header.php'; ?>

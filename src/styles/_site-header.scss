@@ -1,0 +1,55 @@
+#site-header {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  width: 100vw;
+  height: $headerHeight;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 36px;
+    width: 100vw;
+    max-width: $maxWidth;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    align-items: end;
+    height: $headerHeight;
+    font-family: $fontSans;
+    font-weight: 800;
+    font-size: $fontSizeMedium;
+    line-height: $lineHeightMedium;
+  }
+
+  a {
+    display: block;
+    height: $headerHeight;
+    padding: $headerHeight - $lineHeightMedium 12px 0;
+    color: $black;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color1;
+    }
+  }
+
+  #logo {
+    background: $black;
+    transition: background 0.2s;
+
+    &:hover {
+      background: $color1;
+    }
+
+    a {
+      padding-right: 36px;
+      font-weight: 300;
+      color: $bgColor1;
+      text-decoration: none;
+    }
+  }
+}
