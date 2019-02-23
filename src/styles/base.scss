@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Work+Sans:300,800');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: $headerHeight + 24px;
+  background: url('images/background-pattern.png') repeat center -10vh, $bgGradient fixed 100% 100%, $bgColor2;
+  font-family: $fontSerif;
+  font-size: $fontSizeDefault;
+  color: $black;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $fontSans;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+h1 {
+  font-size: $fontSizeXL;
+  line-height: $lineHeightXL;
+}
+
+h2 {
+  font-size: $fontSizeLarge;
+  line-height: $lineHeightLarge;
+}
+
+h3 {
+  font-size: $fontSizeMedium;
+  line-height: $lineHeightMedium;
+}
+
+h4 {
+  font-size: $fontSizeDefault;
+  line-height: $lineHeightDefault;
+}
+
+a {
+  color: $color1;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: darken($color1, 10%);
+}
+
+p {
+  margin: 0 0 2em;
+}
+
+blockquote {
+  margin: 0 0 2em;
+  padding: 0 24px;
+
+  p {
+    margin: 0;
+    font-size: $fontSizeMedium;
+    line-height: $lineHeightMedium;
+    font-style: italic;
+
+    &::before {
+      content: '\201C';
+    }
+
+    &::after {
+      content: '\201D';
+    }
+  }
+
+  cite {
+    display: block;
+    font-family: $fontSans;
+    text-align: right;
+    font-style: normal;
+
+    &::before {
+      content: '\2014';
+    }
+  }
+}
+
+ul {
+  margin: 0 0 2em;
+}
+
+main {
+  width: 100vw;
+  max-width: $maxWidth;
+  padding: 0 36px;
+  margin: 0 auto;
+}

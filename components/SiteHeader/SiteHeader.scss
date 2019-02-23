@@ -1,7 +1,8 @@
-#site-header {
+#SiteHeader {
   position: fixed;
-  top: 32px;
+  top: 0;
   left: 0;
+  z-index: 9999;
   width: 100vw;
   height: $headerHeight;
 
@@ -23,6 +24,12 @@
     font-weight: 800;
     font-size: $fontSizeMedium;
     line-height: $lineHeightMedium;
+
+    &.current-menu-item {
+      a {
+        color: $color1;
+      }
+    }
   }
 
   a {
@@ -31,6 +38,7 @@
     padding: $headerHeight - $lineHeightMedium 12px 0;
     color: $black;
     transition: color 0.2s;
+    text-shadow: -1px 1px 0 $bgColor1;
 
     &:hover {
       color: $color1;
@@ -50,6 +58,11 @@
       font-weight: 300;
       color: $bgColor1;
       text-decoration: none;
+      text-shadow: none;
     }
+  }
+
+  .admin-bar & {
+    top: 32px;
   }
 }

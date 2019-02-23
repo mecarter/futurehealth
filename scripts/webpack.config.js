@@ -42,7 +42,6 @@ module.exports = {
     rules: [
       // Disable require.ensure as it's not a standard language feature.
       { parser: { requireEnsure: false } },
-      // Transform ES6 with Babel
       {
         test: /\.js?$/,
         loader: 'babel-loader',

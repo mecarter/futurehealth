@@ -1,3 +1,7 @@
 @import "styles/global-vars";
 @import "styles/base";
-@import "styles/site-header";
+@import "styles/page-home";
+
+@import "../components/Post/Post";
+@import "../components/PostCard/PostCard";
+@import "../components/SiteHeader/Siteheader";

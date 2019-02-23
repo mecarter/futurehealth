@@ -9,18 +9,25 @@ $fontSans: "Work Sans", sans-serif;
 $fontSerif: "PT Serif", serif !default;
 
 $fontSizeDefault: 16px;
-$fontSizeMedium: 30px;
+$fontSizeMedium: 24px;
+$fontSizeLarge: 30px;
+$fontSizeXL: 48px;
 
 $lineHeightDefault: 24px;
-$lineHeightMedium: 48px;
+$lineHeightMedium: 36px;
+$lineHeightLarge: 48px;
+$lineHeightXL: 60px;
 
 // Colors
 // -------------------------
 $black: #3D3B4A;
 
-$color1: #9d2cfc;
+$color1: #8f53c1;
 $color2: #FF7725;
 
 $bgColor1: #E0DCF2;
 $bgColor2: #E5D1C5;
 $bgGradient: linear-gradient($bgColor1, $bgColor2);
+
+$articleBackground: rgba(255, 255, 255, 0.7);
+$articleGradient: linear-gradient($articleBackground, $articleBackground, rgba($articleBackground, 0));

@@ -1,30 +1,13 @@
-# Presspack
+# FutureHealth Wordpress
 
-> Make Wordpress theme development great again.
+Custom Wordpress theme for FutureHealth project.
 
-## Features
-
-- Modern JavaScript through Webpack
-- Live reload via BrowserSync
-- SCSS support
-- Easy dev environments with Docker Compose
-- Stateless, immutable plugin management via Composer
-- Helpful HTML5 Router for firing JS based on Wordpress page slug.
-- Nothing else.
-
-## Requirements
-
-- Node.js
-- Yarn
-- PHP and Composer
-- Docker for Mac / Windows
-- Docker Compose
+Started from a fork of PressPack (https://github.com/jaredpalmer/presspack).
 
 ## Getting Started
 ```bash
-git clone git@github.com:jaredpalmer/presspack.git
+git clone git@github.com:mecarter/futurehealth.git
 yarn install
-composer install # if you want plugins ( not required )
 docker-compose up 
 ```
 
@@ -125,6 +108,3 @@ docker exec -it host_db_1 /usr/bin/mysqldump -u username -ppassword database_nam
 ```aidl
 docker exec -i host_db_1 /usr/bin/mysqldump -u username -ppassword database_name < backup.sql
 ```
-
-#### Author
-- Jared Palmer [@jaredpalmer](https://twitter.com/jaredpalmer)

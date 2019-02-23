@@ -1,0 +1,11 @@
+.Post {
+  background: $articleBackground;
+  padding: 40px;
+
+  .breadcrumb {
+    display: block;
+    font-family: $fontSans;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+  }
+}

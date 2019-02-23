@@ -1,4 +1,4 @@
-<header id="site-header">
+<header id="SiteHeader">
   <ul>
     <li id="logo">
       <a href="<?php echo get_bloginfo('url'); ?>">
@@ -9,7 +9,6 @@
       array(
         'container' => false,
         'items_wrap' => '%3$s',
-        'link_after' => '.',
         'menu' => 'Primary Navigation'
       )
     ); ?>

@@ -111,3 +111,21 @@ function add_slug_to_body_class($classes) {
     }
     return $classes;
 }
+
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    if ( ! is_single() ) {
+        $more = sprintf( '... <a class="continue-reading" href="%1$s">%2$s</a>',
+            get_permalink( get_the_ID() ),
+            __( 'Continue reading...', 'textdomain' )
+        );
+    }
+ 
+    return $more;
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
