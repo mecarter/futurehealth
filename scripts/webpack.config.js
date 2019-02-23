@@ -19,7 +19,7 @@ function resolveApp(relativePath) {
 }
 
 const paths = {
-  appSrc: resolveApp('src'),
+  appSrc: [resolveApp('src'), resolveApp('components')],
   appBuild: resolveApp('build'),
   appIndexJs: resolveApp('src/index.js'),
   appNodeModules: resolveApp('node_modules'),
