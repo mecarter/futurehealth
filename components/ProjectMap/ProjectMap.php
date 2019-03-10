@@ -20,7 +20,7 @@
       <li class="ProjectSite Bhutan">
         <div class="ProjectSiteTitle">
           <h3>Bhutan</h3>
-          <h4>Shevani's Project Title™</h4>
+          <h4>Bhutan Project</h4>
         </div>
         <div class="MapMarker"></div>
       </li>
