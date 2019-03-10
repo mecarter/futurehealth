@@ -13,6 +13,7 @@ html {
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -33,23 +34,23 @@ h1, h2, h3, h4, h5 {
 
 
 h1 {
-  font-size: $fontSizeXL;
-  line-height: $lineHeightXL;
+  font-size: $fontSizeH1;
+  line-height: $lineHeightH1;
 }
 
 h2 {
-  font-size: $fontSizeLarge;
-  line-height: $lineHeightLarge;
+  font-size: $fontSizeH2;
+  line-height: $lineHeightH2;
 }
 
 h3 {
-  font-size: $fontSizeMedium;
-  line-height: $lineHeightMedium;
+  font-size: $fontSizeH3;
+  line-height: $lineHeightH3;
 }
 
 h4 {
-  font-size: $fontSizeDefault;
-  line-height: $lineHeightDefault;
+  font-size: $fontSizeH4;
+  line-height: $lineHeightH4;
 }
 
 a {
@@ -71,8 +72,8 @@ blockquote {
 
   p {
     margin: 0;
-    font-size: $fontSizeMedium;
-    line-height: $lineHeightMedium;
+    font-size: $fontSizeH3;
+    line-height: $lineHeightH3;
     font-style: italic;
 
     &::before {
@@ -105,4 +106,8 @@ main {
   max-width: $maxWidth;
   padding: 0 36px;
   margin: 0 auto;
+}
+
+.cards-wrapper {
+  margin-bottom: 72px;
 }

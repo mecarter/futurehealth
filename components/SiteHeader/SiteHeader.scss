@@ -22,8 +22,8 @@
     height: $headerHeight;
     font-family: $fontSans;
     font-weight: 800;
-    font-size: $fontSizeMedium;
-    line-height: $lineHeightMedium;
+    font-size: $fontSizeH3;
+    line-height: $lineHeightH3;
 
     &.current-menu-item {
       a {
@@ -35,7 +35,7 @@
   a {
     display: block;
     height: $headerHeight;
-    padding: $headerHeight - $lineHeightMedium 12px 0;
+    padding: $headerHeight - $lineHeightH3 12px 0;
     color: $black;
     transition: color 0.2s;
     text-shadow: -1px 1px 0 $bgColor1;

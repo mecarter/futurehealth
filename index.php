@@ -5,7 +5,7 @@
     <h1>Stories</h1>
     
     <!-- section -->
-    <section>
+    <section class="cards-wrapper">
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 

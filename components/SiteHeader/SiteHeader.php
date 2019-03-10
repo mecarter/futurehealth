@@ -1,7 +1,7 @@
 <header id="SiteHeader">
   <ul>
-    <li id="logo">
-      <a href="<?php echo get_bloginfo('url'); ?>">
+    <li id="logo" class="menu-item">
+      <a href="<?php echo is_home() ? get_bloginfo('url') : '#Top'; ?>">
         <?php echo get_bloginfo('name'); ?>
       </a>
     </li>

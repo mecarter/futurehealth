@@ -1,0 +1,117 @@
+// IMG dimensions: 1920 x 844
+#ProjectMapWrapper {
+  position: absolute;
+  left: 0;
+  max-width: 100vw;
+  height: calc(100vw / 1920 * 844);
+}
+
+#ProjectMap {
+  width: 100vw;
+  height: calc(100vw / 1920 * 844);
+  background-image: url('images/authagraph-map.png');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .MapMarker {
+    width: 36px;
+    height: 48px;
+    background-image: url('images/map-marker.svg');
+    background-size: 100% auto;
+    transition: all 0.3s;
+  }
+
+  .MapMarkerLine  {
+    position: absolute;
+    transition: all 0.3s;
+  }
+
+  .ProjectSites {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vw / 1920 * 844);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ProjectSite {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+
+    .ProjectSiteTitle {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      opacity: 0;
+      transform: translate(0, -0.25vw);
+      transition: all 0.4s;
+    }
+
+    h3, 
+    h4 {
+      white-space: nowrap;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      .ProjectSiteTitle {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      .MapMarker,
+      .MapMarkerLine {
+        opacity: 0.6;
+      }
+
+      .MapMarker {
+        transform: translate(0, -0.25vw);
+      }
+    }
+
+    &.Philippines {
+      bottom: 43%;
+      left: 29%;
+    }
+
+    &.GuatemalaLA {
+      left: 66.25%;
+      bottom: 58.5%;
+
+      // IMG dimensions: 179 x 36
+      .MapMarkerLine {
+        bottom: -1.8vw;
+        right: 1.35vw;
+        width: 9.45vw;
+        height: calc(9.45vw / 179 * 36);
+        background-image: url('images/MapMarkerLine-GuatemalaLA.svg');
+        background-size: 9.45vw auto;
+      }
+
+      .MapMarker:last-child {
+        position: absolute;
+        top: 0.9vw;
+        left: -9.5vw;
+      }
+    }
+
+    &.Bhutan {
+      bottom: 53.6%;
+      left: 24.25%;
+    }
+    
+    &.Netherlands {
+      bottom: 94.25%;
+      left: 16.6%;
+    }
+  }
+}

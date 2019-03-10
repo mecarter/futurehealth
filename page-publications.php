@@ -1,17 +1,23 @@
 <?php get_header(); ?>
 
   <main role="main" aria-label="Content">
-
-    <h1>Publications</h1>
-    
     <!-- section -->
     <section>
 
-    <?php $query = new WP_Query(array('category_name' => 'publications')); ?>
+      <h1><?php the_title(); ?></h1>
 
-    <?php if ($query->have_posts()): while ($query->have_posts()) : $query->the_post(); ?>
+    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <?php include 'components/PostCard/PostCard.php'; ?>
+      <!-- article -->
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      
+        <?php the_content(); ?>
+        
+
+        <?php edit_post_link(); ?>
+
+      </article>
+      <!-- /article -->
 
     <?php endwhile; ?>
 
@@ -20,7 +26,7 @@
       <!-- article -->
       <article>
 
-        <h2><?php _e( 'Sorry, there are no publications to display.', 'html5blank' ); ?></h2>
+        <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
       </article>
       <!-- /article -->
@@ -30,5 +36,4 @@
     </section>
     <!-- /section -->
   </main>
-
 <?php get_footer(); ?>
