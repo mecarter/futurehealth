@@ -346,7 +346,7 @@ main {
   overflow: scroll; }
   .philippines .ProjectOverlayScroller.philippines,
   .bhutan .ProjectOverlayScroller.bhutan,
-  .guatemalala .ProjectOverlayScroller.guatemalala,
+  .guatemala-la .ProjectOverlayScroller.guatemala-la,
   .netherlands .ProjectOverlayScroller.netherlands {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,7 +355,7 @@ main {
 .ProjectOverlayContentWrapper {
   width: 80vw;
   max-width: 720px;
-  padding: 36px 36px 60px; }
+  padding: 48px 36px 96px; }
 
 .ProjectOverlayImage {
   display: -webkit-box;

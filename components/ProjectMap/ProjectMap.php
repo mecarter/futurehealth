@@ -11,7 +11,7 @@
         </a>
       </li>
       <li class="ProjectSite GuatemalaLA">
-        <a href="/projects/guatemalala">
+        <a href="/projects/guatemala-la">
           <div class="ProjectSiteTitle">
             <h3>Guatemala/LA</h3>
             <h4>Migratory Imaginaries</h4>
@@ -25,7 +25,7 @@
         <a href="/projects/bhutan">
           <div class="ProjectSiteTitle">
             <h3>Bhutan</h3>
-            <h4>Bhutan Project</h4>
+            <h4>Labors of the flesh</h4>
           </div>
           <div class="MapMarker"></div>
         </a>
