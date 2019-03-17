@@ -71,11 +71,18 @@
   align-content: center;
   justify-content: center;
   margin: -36px -36px 36px;
-  max-height: calc(100% / 3);
+  height: 40vh;
+  width: calc(100% + 72px);
   overflow: hidden;
+  position: relative;
 
   img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     width: 100%;
+    height: auto;
   }
 }
 

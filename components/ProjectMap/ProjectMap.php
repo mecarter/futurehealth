@@ -4,7 +4,7 @@
       <li class="ProjectSite Philippines">
         <a href="/projects/philippines">
           <div class="ProjectSiteTitle">
-            <h3>Philippines</h3>
+            <h3>The Philippines</h3>
             <h4>Fragile Networks</h4>
           </div>
           <div class="MapMarker"></div>

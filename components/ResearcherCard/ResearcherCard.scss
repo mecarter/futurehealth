@@ -21,6 +21,24 @@
   }
 
   .content {
-    padding-left: 144px;
+    padding-left: 24px;
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+.ResearcherCardOpenProject {
+  border: none;
+  border-top: 1px solid white;
+  background: transparent;
+  width: calc(100% + 72px);
+  padding: 18px;
+  margin: 0 -36px;
+  font-family: $fontSans;
+  font-size: $fontSizeH4;
+  cursor: pointer;
+
+  &:hover {
+    color: $color1;
   }
 }

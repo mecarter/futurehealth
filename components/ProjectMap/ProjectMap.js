@@ -22,5 +22,6 @@ const setupProjectMap = () => {
 }
 
 export default {
-  init: setupProjectMap
+  init: setupProjectMap,
+  projectOverlay: ProjectOverlay,
 };
