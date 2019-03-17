@@ -2,11 +2,13 @@
   <div id="ProjectMap">
     <ul class="ProjectSites">
       <li class="ProjectSite Philippines">
-        <div class="ProjectSiteTitle">
-          <h3>Philippines</h3>
-          <h4>Fragile Networks</h4>
-        </div>
-        <div class="MapMarker"></div>
+        <a href="/projects/philippines">
+          <div class="ProjectSiteTitle">
+            <h3>Philippines</h3>
+            <h4>Fragile Networks</h4>
+          </div>
+          <div class="MapMarker"></div>
+        </a>
       </li>
       <li class="ProjectSite GuatemalaLA">
         <div class="ProjectSiteTitle">
@@ -34,3 +36,5 @@
     </ul>
   </div>
 </div>
+
+<?php include 'ProjectOverlay/ProjectOverlay.php'; ?>

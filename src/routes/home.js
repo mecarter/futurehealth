@@ -1,6 +1,8 @@
+import ProjectMap from '../../components/ProjectMap/ProjectMap';
+
 export default {
   init() {
-     // console.log('home');
+     ProjectMap.init();
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
