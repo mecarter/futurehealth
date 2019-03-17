@@ -45,12 +45,19 @@
 }
 
 .ProjectOverlayScroller {
-  display: flex;
+  display: none;
   align-content: start;
   justify-content: center;
   width: 100vw;
   height: 100vh;
   overflow: scroll;
+
+  .philippines &.philippines,
+  .bhutan &.bhutan,
+  .guatemalala &.guatemalala,
+  .netherlands &.netherlands {
+    display: flex;
+  }
 }
 
 .ProjectOverlayContentWrapper {
@@ -69,7 +76,6 @@
 
   img {
     width: 100%;
-    height: auto;
   }
 }
 

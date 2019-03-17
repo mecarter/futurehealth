@@ -18,7 +18,7 @@ class ProjectOverlayClass {
   open(slug) {
     let newClassName = 'open';
     if (this.slug !== slug) {
-      newClassName += ` ${slug}`;
+      newClassName += ' ' + slug;
     }
     this.slug = slug;
     this.El.className = newClassName;

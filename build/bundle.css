@@ -335,9 +335,7 @@ main {
             animation: ProjectOverlayOut 0.3s forwards; }
 
 .ProjectOverlayScroller {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-line-pack: start;
       align-content: start;
   -webkit-box-pack: center;
@@ -346,6 +344,13 @@ main {
   width: 100vw;
   height: 100vh;
   overflow: scroll; }
+  .philippines .ProjectOverlayScroller.philippines,
+  .bhutan .ProjectOverlayScroller.bhutan,
+  .guatemalala .ProjectOverlayScroller.guatemalala,
+  .netherlands .ProjectOverlayScroller.netherlands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .ProjectOverlayContentWrapper {
   width: 80vw;
@@ -365,8 +370,7 @@ main {
   max-height: calc(100% / 3);
   overflow: hidden; }
   .ProjectOverlayImage img {
-    width: 100%;
-    height: auto; }
+    width: 100%; }
 
 #ProjectOverlayClose {
   position: absolute;

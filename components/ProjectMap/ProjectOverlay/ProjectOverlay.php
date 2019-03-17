@@ -14,7 +14,7 @@
       <div class="ProjectOverlayContentWrapper">
         <?php if (has_post_thumbnail()): ?>
           <div class="ProjectOverlayImage">
-            <?php the_post_thumbnail(array(1200, 400)); ?>
+            <?php the_post_thumbnail('large'); ?>
           </div>
         <?php endif; ?>
         <h1><?php the_title(); ?></h1>

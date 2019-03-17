@@ -11,27 +11,33 @@
         </a>
       </li>
       <li class="ProjectSite GuatemalaLA">
-        <div class="ProjectSiteTitle">
-          <h3>Guatemala/LA</h3>
-          <h4>Migratory Imaginaries</h4>
-        </div>
-        <div class="MapMarker"></div>
-        <div class="MapMarkerLine"></div>
-        <div class="MapMarker"></div>
+        <a href="/projects/guatemalala">
+          <div class="ProjectSiteTitle">
+            <h3>Guatemala/LA</h3>
+            <h4>Migratory Imaginaries</h4>
+          </div>
+          <div class="MapMarker"></div>
+          <div class="MapMarkerLine"></div>
+          <div class="MapMarker"></div>
+        </a>
       </li>
       <li class="ProjectSite Bhutan">
-        <div class="ProjectSiteTitle">
-          <h3>Bhutan</h3>
-          <h4>Bhutan Project</h4>
-        </div>
-        <div class="MapMarker"></div>
+        <a href="/projects/bhutan">
+          <div class="ProjectSiteTitle">
+            <h3>Bhutan</h3>
+            <h4>Bhutan Project</h4>
+          </div>
+          <div class="MapMarker"></div>
+        </a>
       </li>
       <li class="ProjectSite Netherlands">
-        <div class="ProjectSiteTitle">
-          <h3>Netherlands</h3>
-          <h4>Home Base @ UvA</h4>
-        </div>
-        <div class="MapMarker"></div>
+        <a href="/projects/netherlands">
+          <div class="ProjectSiteTitle">
+            <h3>Netherlands</h3>
+            <h4>Home Base @ UvA</h4>
+          </div>
+          <div class="MapMarker"></div>
+        </a>
       </li>
     </ul>
   </div>
