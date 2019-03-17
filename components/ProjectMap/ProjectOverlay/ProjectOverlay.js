@@ -2,7 +2,6 @@ class ProjectOverlayClass {
   constructor() {
     this.El = document.getElementById('ProjectOverlay');
     this.CloseButton = document.getElementById('ProjectOverlayClose');
-    this.slug = null;
     this.listenForEscKey = this.listenForEscKey.bind(this);
 
     this.CloseButton.addEventListener('click', e => {
@@ -16,13 +15,8 @@ class ProjectOverlayClass {
   }
   
   open(slug) {
-    let newClassName = 'open';
-    if (this.slug !== slug) {
-      newClassName += ' ' + slug;
-    }
-    this.slug = slug;
+    let newClassName = 'open ' + slug;
     this.El.className = newClassName;
-
     window.addEventListener('keyup', this.listenForEscKey);
   };
 
