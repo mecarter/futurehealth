@@ -315,40 +315,58 @@ main {
 
 #ProjectOverlay {
   display: none;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  padding: 10vw;
   background: rgba(255, 255, 255, 0.95);
   -webkit-transform: translate3d(-5%, 0, 0);
           transform: translate3d(-5%, 0, 0);
   opacity: 0; }
   #ProjectOverlay.open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-animation: ProjectOverlayIn 0.3s forwards;
             animation: ProjectOverlayIn 0.3s forwards; }
   #ProjectOverlay.closing {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-animation: ProjectOverlayOut 0.3s forwards;
             animation: ProjectOverlayOut 0.3s forwards; }
-  #ProjectOverlay > div {
-    width: 80vw;
-    max-width: 720px;
-    max-height: 80vh;
-    padding: 18px;
-    overflow: scroll; }
+
+.ProjectOverlayScroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll; }
+
+.ProjectOverlayContentWrapper {
+  width: 80vw;
+  max-width: 720px;
+  padding: 36px 36px 60px; }
+
+.ProjectOverlayImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -36px -36px 36px;
+  max-height: calc(100% / 3);
+  overflow: hidden; }
+  .ProjectOverlayImage img {
+    width: 100%;
+    height: auto; }
 
 #ProjectOverlayClose {
   position: absolute;
@@ -499,6 +517,10 @@ main {
     list-style: none;
     margin: 0;
     padding: 0; }
+    #SiteFooter ul a {
+      color: #E0DCF2; }
+      #SiteFooter ul a:hover {
+        color: #E5D1C5; }
   #SiteFooter #sponsors {
     display: -webkit-box;
     display: -ms-flexbox;
