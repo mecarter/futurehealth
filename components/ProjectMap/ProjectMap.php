@@ -1,6 +1,7 @@
 <div id="ProjectMapWrapper">
   <div id="ProjectMap">
     <ul class="ProjectSites">
+      <?php /*
       <li class="ProjectSite Philippines">
         <a href="/projects/philippines">
           <div class="ProjectSiteTitle">
@@ -30,6 +31,7 @@
           <div class="MapMarker"></div>
         </a>
       </li>
+      */ ?>
       <li class="ProjectSite Netherlands">
         <a href="/projects/netherlands">
           <div class="ProjectSiteTitle">

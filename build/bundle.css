@@ -180,20 +180,28 @@ main {
 
 #page-home-main {
   margin-bottom: 120px; }
-  #page-home-main article {
-    max-width: 720px;
-    margin: 120px auto 48px;
-    padding: 36px 48px;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)); }
-    #page-home-main article h1, #page-home-main article h2, #page-home-main article h3, #page-home-main article h4 {
-      font-weight: normal;
-      padding-bottom: 1em;
-      margin-bottom: 1em;
-      border-bottom: 1px solid #E0DCF2; }
 
 #About {
-  padding-top: 60px; }
+  font-size: 1.2vw;
+  width: 80vw;
+  max-width: 1400px;
+  margin: 120px auto 48px;
+  padding: 60px 48px 36px;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)); }
+  #About h1, #About h2, #About h3, #About h4 {
+    font-weight: normal;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #E0DCF2;
+    font-size: 2.4vw;
+    line-height: 1.2; }
+
+@media (max-width: 1024px) {
+  #About {
+    font-size: 18px; }
+    #About h1, #About h2, #About h3, #About h4 {
+      font-size: 36px; } }
 
 #Projects {
   padding-top: 60px;
@@ -535,6 +543,8 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -543,7 +553,7 @@ main {
     padding: 36px; }
   #SiteFooter ul {
     list-style: none;
-    margin: 0;
+    margin: 0 0 36px;
     padding: 0; }
     #SiteFooter ul a {
       color: #E0DCF2; }
@@ -555,6 +565,8 @@ main {
     display: flex; }
     #SiteFooter #sponsors li {
       padding: 0 18px; }
+      #SiteFooter #sponsors li:first-child {
+        padding-left: 0; }
       #SiteFooter #sponsors li a {
         display: block;
         width: 76px;
@@ -584,9 +596,9 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     padding: 0 36px;
     width: 100vw;

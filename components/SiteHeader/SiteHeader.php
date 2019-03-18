@@ -5,12 +5,12 @@
         <?php echo get_bloginfo('name'); ?>
       </a>
     </li>
-    <?php wp_nav_menu(
+    <?php /* wp_nav_menu(
       array(
         'container' => false,
         'items_wrap' => '%3$s',
         'menu' => 'Primary Navigation'
       )
-    ); ?>
+    ); */ ?>
   </ul>
 </header>

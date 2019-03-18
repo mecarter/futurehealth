@@ -2,6 +2,7 @@
   <div id="Top"></div>
 
   <main id="page-home-main" role="main" aria-label="Content">
+    <?php /*
     <section
       id="one-thousand-image"
       <?php if (has_post_thumbnail()): ?>
@@ -23,6 +24,7 @@
 
     <!-- section -->
     <section>
+    */ ?>
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -58,6 +60,7 @@
       <?php include 'components/ProjectMap/ProjectMap.php'; ?>
     </section>
 
+    <?php /*
     <section id="Researchers">
       <h2>Research Team</h2>
 
@@ -81,6 +84,7 @@
 
       <?php endif; ?>
     </section>
+    */ ?>
   </main>
 
 <?php get_footer(); ?>
