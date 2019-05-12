@@ -12,5 +12,6 @@
         'menu' => 'Primary Navigation'
       )
     ); ?>
+    <li id="mobile-menu-toggle"><a href="#">Navigation</a></li>
   </ul>
 </header>

@@ -40,6 +40,7 @@ body {
   background: url('images/background-pattern.png') repeat center -10vh, $bgGradient fixed 100% 100%, $bgColor2;
   font-family: $fontSerif;
   font-size: $fontSizeDefault;
+  line-height: $lineHeightDefault;
   color: $black;
   margin: 0;
 }
@@ -129,4 +130,10 @@ main {
 
 .cards-wrapper {
   margin-bottom: 72px;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 0 16px;
+  }
 }

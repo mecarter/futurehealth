@@ -9,16 +9,24 @@
   }
 }
 
+#preload-image { display: none; }
+
 #home-splash {
   position: relative;
   width: calc(100vw - 72px);
   max-width: $maxWidth - 48px;
-  padding: 2vh 0;
+  padding: 24px 0 0;
 
   svg {
-    animation: fadeIn 1s forwards;
     width: 100%;
     height: auto;
+    opacity: 0;
+  }
+
+  &.loaded {
+    svg {
+      animation: fadeIn 1s forwards;
+    }
   }
 }
 
@@ -72,4 +80,14 @@
   }
 }
 
-#preloadImage { display: none; }
+@media (max-width: 840px) {
+  #Researchers {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  #home-splash {
+    width: calc(100vw - 36px);
+  }
+}

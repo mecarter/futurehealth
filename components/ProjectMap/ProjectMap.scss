@@ -122,3 +122,13 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #ProjectMap {
+    .ProjectSite {
+      .ProjectSiteTitle {
+        display: none;
+      }
+    }
+  }
+}

@@ -21,8 +21,10 @@
         }
       ?>
 
+      <img id="preload-image" src="<?php echo $random_image_url; ?>">
+
       <section id="home-splash">
-        <svg width="1191px" height="623px" viewBox="0 0 1191 623" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg width="1191px" height="623px" viewBox="0 0 1191 623" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="home-splash-svg">
           <g id="future-health-splash-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="future-health-splash" transform="translate(-193.000000, -251.000000)">
               <g id="future-health-splash-artboard" transform="translate(193.200000, 251.200000)">
@@ -86,9 +88,5 @@
       <?php endif; ?>
     </section>
   </main>
-
-<div id="preloadImages">
-
-</div>
 
 <?php get_footer(); ?>
