@@ -25,10 +25,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9999;
   width: 100vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
 
   transform: translate3d(-5%, 0, 0);
   opacity: 0;
