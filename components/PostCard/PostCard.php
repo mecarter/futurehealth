@@ -10,7 +10,14 @@
   </div>
 
   <div class="content">
-    <h2><?php the_title(); ?></h2>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+    <?php if (get_the_category()[0]->slug == 'events'): ?>
+      <h4>
+        <?php echo date('D, j M Y', strtotime(CFS()->get('event_date'))); ?> at <?php echo CFS()->get('event_time'); ?><br>
+        <?php echo CFS()->get('event_location'); ?>
+      </h4>
+    <?php endif; ?>
 
     <p><?php the_excerpt(); ?></p>
   </div>
