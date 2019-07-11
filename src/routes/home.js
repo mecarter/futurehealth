@@ -17,7 +17,7 @@ export default {
         PreloadImage.removeEventListener('load', handleImageLoaded);
         handleImageLoaded();
       }
-     }, 5000);
+     }, 1000);
   },
   finalize() {
   },

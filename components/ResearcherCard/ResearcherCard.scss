@@ -1,7 +1,7 @@
 .ResearcherCard {
   width: 100%;
   background: $articleGradient;
-  padding: 36px;
+  padding: 36px 0 36px 36px;
   margin-bottom: 24px;
 
   .thumbnail-wrapper {
@@ -21,9 +21,9 @@
   }
 
   .content {
-    padding-left: 24px;
-    height: 320px;
-    overflow: hidden;
+    padding: 0 36px 0 24px;
+    height: 360px;
+    overflow: auto;
   }
 }
 
@@ -31,9 +31,9 @@
   border: none;
   border-top: 1px solid white;
   background: transparent;
-  width: calc(100% + 72px);
+  width: calc(100% + 36px);
   padding: 18px;
-  margin: 0 -36px;
+  margin-left: -36px;
   font-family: $fontSans;
   font-size: $fontSizeH4;
   cursor: pointer;
