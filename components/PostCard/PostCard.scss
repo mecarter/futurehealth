@@ -4,38 +4,6 @@
   cursor: pointer;
   background: $articleGradient;
 
-  .image-wrapper {
-    flex: 0 0 33%;
-    background: lighten($color1, 10%);
-
-    a {
-      display: block;
-    }
-
-    img,
-    .image-placeholder {
-      opacity: 0.6;
-      transition: opacity 0.2s;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      vertical-align: bottom;
-    }
-
-    .image-placeholder {
-      padding-top: 100%;
-      background: url('images/placeholder.png');
-      background-size: cover;
-    }
-  }
-
-  .content {
-    flex: 0 0 66%;
-    padding: 24px 36px;
-  }
-
   .continue-reading {
     display: block;
     margin-top: 1em;
@@ -55,10 +23,42 @@
       }
     }
 
-    .content {
+    .PostCard-Content {
       h2 {
         color: $color1;
       }
     }
   }
+}
+
+.PostCard-Content {
+  flex: 0 0 66%;
+  padding: 24px 36px;
+}
+
+.PostCard-ImageWrapper {
+  flex: 0 0 33%;
+  background: lighten($color1, 10%);
+
+  a {
+    display: block;
+  }
+
+  img,
+  .image-placeholder {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+}
+
+.PostCard-ImagePlaceholder {
+  padding-top: 100%;
+  background: url('images/placeholder.png');
+  background-size: cover;
 }

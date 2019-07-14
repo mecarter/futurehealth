@@ -44,7 +44,7 @@
   }
 }
 
-.ProjectOverlayScroller {
+.ProjectOverlay-Scroller {
   display: none;
   align-content: start;
   justify-content: center;
@@ -60,13 +60,13 @@
   }
 }
 
-.ProjectOverlayContentWrapper {
+.ProjectOverlay-ContentWrapper {
   width: 80vw;
   max-width: 720px;
-  padding: 48px 36px 96px;
+  padding: 48px 36px 0;
 }
 
-.ProjectOverlayImage {
+.ProjectOverlay-Image {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -86,10 +86,15 @@
   }
 }
 
-#ProjectOverlayClose {
+.ProjectOverlay-Content {
+  padding-bottom: 48px;
+}
+
+#ProjectOverlay-Close {
   position: absolute;
   top: 1vw;
   right: 1vw;
+  z-index: 100;
   background: transparent;
   border: none;
   padding: 0;
@@ -101,5 +106,24 @@
 
   &:hover {
     color: $color1;
+  }
+}
+
+@media (max-width: 640px) {
+  .ProjectOverlay-ContentWrapper {
+    width: 100%;
+    padding: 48px 18px 0;
+
+    h1,
+    h2 {
+      text-align: left;
+    }
+
+    h1 {
+      word-break: break-word;
+    }
+  }
+
+  .ProjectOverlay-Content {
   }
 }

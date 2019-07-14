@@ -1,5 +1,5 @@
 <div id="ProjectOverlay">
-  <button id="ProjectOverlayClose">&times;</button>
+  <button id="ProjectOverlay-Close">&times;</button>
   <?php
     global $post;
     $current_page = $post;
@@ -10,15 +10,15 @@
       foreach($projects as $project => $post) {
         setup_postdata($post);
   ?>
-    <div class="<?php echo $post->post_name; ?> ProjectOverlayScroller">
-      <div class="ProjectOverlayContentWrapper">
+    <div class="<?php echo $post->post_name; ?> ProjectOverlay-Scroller">
+      <div class="ProjectOverlay-ContentWrapper">
         <?php if (has_post_thumbnail()): ?>
-          <div class="ProjectOverlayImage">
+          <div class="ProjectOverlay-Image">
             <?php the_post_thumbnail('large'); ?>
           </div>
         <?php endif; ?>
         <h1><?php the_title(); ?></h1>
-        <div class="ProjectOverlayContent">
+        <div class="ProjectOverlay-Content">
           <?php the_content(); ?>
         </div>
       </div>

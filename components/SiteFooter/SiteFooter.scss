@@ -26,38 +26,66 @@
       }
     }
   }
+}
 
-  #sponsors {
-    display: flex;
+#SiteFooter-Sponsors {
+  display: flex;
 
-    li {
-      padding: 0 18px;
+  li {
+    padding: 0 18px;
 
-      a {
-        display: block;
-        width: 76px;
-        height: 76px;
-        background-size: 100% auto;
-        text-indent: -9999px;
-        transition: opacity 0.2s;
-        opacity: 0.75;
+    a {
+      display: block;
+      width: 76px;
+      height: 76px;
+      background-size: 100% auto;
+      text-indent: -9999px;
+      transition: opacity 0.2s;
+      opacity: 0.75;
 
-        &:hover {
-          opacity: 1;
-        }
+      &:hover {
+        opacity: 1;
+      }
 
-        &#logo-aissr {
-          background-image: url('images/logo-aissr.png');
-        }
+      &#logo-aissr {
+        background-image: url('images/logo-aissr.png');
+      }
 
-        &#logo-uva {
-          background-image: url('images/logo-uva.png');
-        }
+      &#logo-uva {
+        background-image: url('images/logo-uva.png');
+      }
 
-        &#logo-erc {
-          background-image: url('images/logo-erc.png');
-        }
+      &#logo-erc {
+        background-image: url('images/logo-erc.png');
       }
     }
+  }
+}
+
+@media (max-width: 660px) {
+  #SiteFooter {
+    > div {
+      display: block;
+    }
+
+    ul {
+      margin-bottom: 18px;
+    }
+  }
+
+  #SiteFooter-Sponsors {
+    li {
+      padding: 0 6px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #SiteFooter > div {
+    padding: 18px;
   }
 }

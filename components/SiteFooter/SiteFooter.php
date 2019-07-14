@@ -8,7 +8,7 @@
         <a href="mailto:info@globalfuturehealth.org">info@globalfuturehealth.org</a>
       </li>
     </ul>
-    <ul id="sponsors">
+    <ul id="SiteFooter-Sponsors">
       <li><a href="#" id="logo-aissr">AISSR</a></li>
       <li><a href="#" id="logo-uva">University of Amsterdam</a></li>
       <li><a href="#" id="logo-erc">ERC</a></li>

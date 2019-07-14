@@ -1,11 +1,16 @@
 .Post {
   background: $articleBackground;
   padding: 40px;
+}
 
-  .breadcrumb {
-    display: block;
-    font-family: $fontSans;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-  }
+.Post-Content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.Post-Breadcrumb {
+  display: block;
+  font-family: $fontSans;
+  font-weight: bold;
+  margin-bottom: 1.5em;
 }

@@ -61,6 +61,7 @@
     <?php endif; ?>
 
     <section id="Projects">
+      <h2>Projects</h2>
       <?php include 'components/ProjectMap/ProjectMap.php'; ?>
     </section>
 

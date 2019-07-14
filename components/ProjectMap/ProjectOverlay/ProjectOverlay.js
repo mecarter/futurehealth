@@ -2,8 +2,10 @@ class ProjectOverlayClass {
   constructor() {
     this.BodyEl = document.body;
     this.El = document.getElementById('ProjectOverlay');
-    this.CloseButton = document.getElementById('ProjectOverlayClose');
+    this.CloseButton = document.getElementById('ProjectOverlay-Close');
     this.listenForEscKey = this.listenForEscKey.bind(this);
+
+    if (!this.El || !this.CloseButton) return;
 
     this.CloseButton.addEventListener('click', e => {
       e.preventDefault();

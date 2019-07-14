@@ -59,10 +59,14 @@
 }
 
 #Projects {
-  padding-top: $headerHeight * 2;
+  padding-top: $headerHeight;
   // Calculated from ProjectMap.scss based on the bg img size
   height: calc(104vw / 1920 * 844);
   margin-bottom: 0;
+
+  > h2 {
+    text-align: center;
+  }
 }
 
 #Researchers {
@@ -86,8 +90,32 @@
   }
 }
 
+@media (max-width: 720px) {
+  #Projects {
+    padding-top: $headerHeight;
+  }
+}
+
 @media (max-width: 520px) {
+  #page-home-main {
+    margin-bottom: 48px;
+    
+    article {
+      margin-bottom: 18px;
+    }
+  }
+
   #home-splash {
     width: calc(100vw - 36px);
+  }
+}
+
+@media (max-width: 480px) {
+  #page-home-main article {
+    padding: 36px 18px;
+  }
+
+  #Projects {
+    height: auto;
   }
 }

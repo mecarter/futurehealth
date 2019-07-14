@@ -15,7 +15,9 @@
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
+}
 
+@media (min-width: 721px) {
   .MapMarker {
     width: 36px;
     height: 48px;
@@ -123,12 +125,42 @@
   }
 }
 
-@media (max-width: 600px) {
-  #ProjectMap {
-    .ProjectSite {
-      .ProjectSiteTitle {
-        display: none;
-      }
+@media (max-width: 720px) {
+  #ProjectMapWrapper {
+    margin-top: 0;
+  }  
+
+  .ProjectSites {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 18px;
+    margin: 0;
+  }
+
+  .ProjectSite {
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 18px 0;
+
+    h3 {
+      margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  #ProjectMapWrapper {
+    position: static;
+    height: auto;
+    margin-left: -18px;
+  }
+
+  #ProjectMap {
+    height: auto;
+  }
+
+  .ProjectSite {
+    flex: 0 0 100%;
   }
 }

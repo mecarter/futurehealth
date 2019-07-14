@@ -1,15 +1,15 @@
 <article id="post-<?php the_ID(); ?>" class="PostCard <?php foreach(get_post_class() as $class) { echo $class . ' '; } ?>">
-  <div class="image-wrapper">
+  <div class="PostCard-ImageWrapper">
     <a href="<?php the_permalink(); ?>">
       <?php if (has_post_thumbnail()): ?>
         <?php the_post_thumbnail('thumbnail'); ?>
       <?php else: ?>
-        <div class="image-placeholder"></div>
+        <div class="PostCard-ImagePlaceholder"></div>
       <?php endif; ?>
     </a>
   </div>
 
-  <div class="content">
+  <div class="PostCard-Content">
     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
     <?php if (get_the_category()[0]->slug == 'events'): ?>

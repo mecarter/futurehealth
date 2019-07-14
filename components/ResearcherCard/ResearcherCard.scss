@@ -3,31 +3,31 @@
   background: $articleGradient;
   padding: 36px 0 36px 36px;
   margin-bottom: 24px;
+}
 
-  .thumbnail-wrapper {
-    float: left;
-    position: relative;
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
+.ResearcherCard-ThumbnailWrapper {
+  float: left;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
 
-    img {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .content {
-    padding: 0 36px 0 24px;
-    height: 360px;
-    overflow: auto;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
   }
 }
 
-.ResearcherCardOpenProject {
+.ResearcherCard-Content {
+  padding: 0 36px 0 24px;
+  height: 360px;
+  overflow: auto;
+}
+
+.ResearcherCard-OpenProject {
   border: none;
   border-top: 1px solid white;
   background: transparent;
@@ -40,5 +40,43 @@
 
   &:hover {
     color: $color1;
+  }
+}
+
+@media (max-width: 660px) {
+  .ResearcherCard {
+    padding: 36px;
+  }
+
+  .ResearcherCard-ThumbnailWrapper {
+    float: none;
+    margin: 0 0 18px;
+
+    img {
+      position: static;
+      width: 48px;
+      transform: none;
+    }
+  }
+
+  .ResearcherCard-Content {
+    height: auto;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .ResearcherCard-OpenProject {
+    width: calc(100% + 72px);
+  }
+}
+
+@media (max-width: 480px) {
+  .ResearcherCard {
+    padding: 18px;
+  }
+
+  .ResearcherCard-OpenProject {
+    width: calc(100% + 36px);
+    margin-left: -18px;
   }
 }

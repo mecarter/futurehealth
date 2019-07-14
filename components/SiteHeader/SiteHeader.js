@@ -3,10 +3,10 @@ const setupSiteHeader = () => {
   const SiteHeader = document.getElementById('SiteHeader');
   const toggleSiteHeaderScrolled = function() {
     if ((document.documentElement.scrollTop > 50 || document.body.scrollTop > 50)) {
-      if (!SiteHeader.className.includes(' scrolled')) SiteHeader.className += ' scrolled';
+      SiteHeader.classList.add('scrolled');
       return;
     }
-    SiteHeader.className = SiteHeader.className.replace(' scrolled', '');
+    SiteHeader.classList.remove('scrolled');
   }
   document.addEventListener('scroll', toggleSiteHeaderScrolled);
   toggleSiteHeaderScrolled();
@@ -21,6 +21,7 @@ const setupSiteHeader = () => {
       const hashLinkElement = document.getElementById(hashLink);
       if (hashLink && hashLinkElement) {
         e.preventDefault();
+        SiteHeader.classList.remove('show-mobile-menu');
         hashLinkElement.scrollIntoView({
           behavior: 'smooth',
           block: 'start',
@@ -30,14 +31,16 @@ const setupSiteHeader = () => {
   }
 
   // Add toggle handling for the mobile menu
-  const MobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const MobileMenuToggle = document.getElementById('SiteHeader-MobileMenu-Toggle');
   MobileMenuToggle.addEventListener('click', function(e) {
     e.preventDefault();
-    if (SiteHeader.className.includes('show-mobile-menu')) {
-      SiteHeader.className = SiteHeader.className.replace(' show-mobile-menu', '');
-      return;
-    }
-    SiteHeader.className += ' show-mobile-menu';
+    SiteHeader.classList.toggle('show-mobile-menu');
+  });
+
+  const MobileMenuClose = document.getElementById('SiteHeader-MobileMenu-Close');
+  MobileMenuClose.addEventListener('click', function(e) {
+    e.preventDefault();
+    SiteHeader.classList.remove('show-mobile-menu');
   });
 }
 
