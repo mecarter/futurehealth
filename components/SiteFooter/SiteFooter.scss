@@ -32,32 +32,24 @@
   display: flex;
 
   li {
-    padding: 0 18px;
+    margin: 0 18px;
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-size: 100% auto;
+    text-indent: -9999px;
+    opacity: 0.75;
 
-    a {
-      display: block;
-      width: 76px;
-      height: 76px;
-      background-size: 100% auto;
-      text-indent: -9999px;
-      transition: opacity 0.2s;
-      opacity: 0.75;
+    &#logo-aissr {
+      background-image: url('images/logo-aissr.png');
+    }
 
-      &:hover {
-        opacity: 1;
-      }
+    &#logo-uva {
+      background-image: url('images/logo-uva.png');
+    }
 
-      &#logo-aissr {
-        background-image: url('images/logo-aissr.png');
-      }
-
-      &#logo-uva {
-        background-image: url('images/logo-uva.png');
-      }
-
-      &#logo-erc {
-        background-image: url('images/logo-erc.png');
-      }
+    &#logo-erc {
+      background-image: url('images/logo-erc.png');
     }
   }
 }

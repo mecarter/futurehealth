@@ -9,17 +9,17 @@ $headerHeightScrolled: 36px;
 $fontSans: "Authentic Sans", sans-serif;
 $fontSerif: "Authentic Sans", serif !default;
 
-$fontSizeDefault: 16px;
-$fontSizeH4: 18px;
-$fontSizeH3: 24px;
-$fontSizeH2: 30px;
-$fontSizeH1: 48px;
+$fontSizeDefault: 18px;
+$fontSizeH4: 21px;
+$fontSizeH3: 27px;
+$fontSizeH2: 35px;
+$fontSizeH1: 60px;
 
-$lineHeightDefault: 24px;
-$lineHeightH4: 24px;
-$lineHeightH3: 30px;
-$lineHeightH2: 36px;
-$lineHeightH1: 54px;
+$lineHeightDefault: 1.5;
+$lineHeightH4: 1.4;
+$lineHeightH3: 1.4;
+$lineHeightH2: 1.4;
+$lineHeightH1: 1.4;
 
 // Colors
 // -------------------------
@@ -31,6 +31,7 @@ $color2: #FF7725;
 $bgColor1: #E0DCF2;
 $bgColor2: #E5D1C5;
 $bgGradient: linear-gradient($bgColor1, $bgColor2);
+$bgGradientHorizontal: linear-gradient(to right, $bgColor1, $bgColor2);
 
 $articleBackground: rgba(255, 255, 255, 0.7);
 $articleGradient: linear-gradient($articleBackground, $articleBackground, rgba($articleBackground, 0));

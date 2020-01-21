@@ -96,7 +96,12 @@
       left: 66.25%;
       bottom: 58.5%;
 
-      // IMG dimensions: 179 x 36
+      .ProjectSiteTitle {
+        left: -9.5vw;
+        bottom: calc(48px - 0.9vw);
+      }
+
+      /* IMG dimensions: 179 x 36 */
       .MapMarkerLine {
         bottom: -1.8vw;
         right: 1.35vw;

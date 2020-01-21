@@ -9,9 +9,9 @@
       </li>
     </ul>
     <ul id="SiteFooter-Sponsors">
-      <li><a href="#" id="logo-aissr">AISSR</a></li>
-      <li><a href="#" id="logo-uva">University of Amsterdam</a></li>
-      <li><a href="#" id="logo-erc">ERC</a></li>
+      <li id="logo-aissr">AISSR</li>
+      <li id="logo-uva">University of Amsterdam</li>
+      <li id="logo-erc">ERC</li>
     </ul>
   </div>
 </footer>
