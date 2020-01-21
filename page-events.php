@@ -11,7 +11,7 @@
       'category_name' => 'events',
       'order_by' => 'meta_value',
       'meta_key' => 'event_date',
-      'order' => 'DESC'
+      'order' => 'ASC'
     )); ?>
 
     <?php if ($query->have_posts()): while ($query->have_posts()) : $query->the_post(); ?>
