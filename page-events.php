@@ -7,7 +7,12 @@
     <!-- section -->
     <section class="cards-wrapper">
 
-    <?php $query = new WP_Query(array('category_name' => 'events')); ?>
+    <?php $query = new WP_Query(array(
+      'category_name' => 'events',
+      'order_by' => 'meta_value',
+      'meta_key' => 'event_date',
+      'order' => 'DESC'
+    )); ?>
 
     <?php if ($query->have_posts()): while ($query->have_posts()) : $query->the_post(); ?>
 
