@@ -130,9 +130,11 @@ main {
   max-width: 1372px;
   padding: 24px 0 0; }
   #home-splash svg {
-    width: 100%;
+    display: block;
+    width: 75%;
     height: auto;
-    opacity: 0; }
+    opacity: 0;
+    margin: 40px auto; }
   #home-splash.loaded svg {
     -webkit-animation: fadeIn 1s forwards;
             animation: fadeIn 1s forwards; }
@@ -147,8 +149,8 @@ main {
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)); }
     #page-home-main article h1, #page-home-main article h2, #page-home-main article h3, #page-home-main article h4 {
       font-weight: normal;
-      padding-bottom: 1em;
-      margin-bottom: 1em;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.75em;
       border-bottom: 1px solid #E0DCF2; }
 
 #Top {

@@ -18,9 +18,11 @@
   padding: 24px 0 0;
 
   svg {
-    width: 100%;
+    display: block;
+    width: 75%;
     height: auto;
     opacity: 0;
+    margin: 40px auto;
   }
 
   &.loaded {
@@ -41,8 +43,8 @@
 
     h1, h2, h3, h4 {
       font-weight: normal;
-      padding-bottom: 1em;
-      margin-bottom: 1em;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.75em;
       border-bottom: 1px solid $bgColor1;
     }
   }
