@@ -12,7 +12,8 @@
           'category_name' => 'publications',
           'orderby' => 'meta_value',
           'meta_key' => 'date_published',
-          'order' => 'DESC'
+          'order' => 'DESC',
+          'posts_per_page' => -1,
         )); ?>
 
         <?php $year = null; ?>
